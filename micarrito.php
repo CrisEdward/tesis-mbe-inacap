@@ -21,11 +21,20 @@
                 'user_id' => $userId,
                 'carrito' => ''
             );
-            json_encode($carrito);
-
+            //json_encode($carrito);
         }
         
-         echo 'nombre: ' . $nomPro . ' descripcion: ' . $desPro . 'prePro' . $prePro;
+        echo 'nombre: ' . $nomPro . ' descripcion: ' . $desPro . 'prePro' . $prePro;
+        
+        $productoArr = array(
+            'nombre' => $nomPro,
+            'descripcion' => $desPro,
+            'precio' => $prePro
+        );
+
+        array_push($carrito['carrito'], $productoArr);
+
+        echo json_encode($carrito);
 
        /* $arr = json_decode($carrito, true);
 
