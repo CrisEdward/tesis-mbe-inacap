@@ -6,8 +6,7 @@
     else{
         
  ?>
-    
-
+ Prueba
 <?php 
     }
     ?>
