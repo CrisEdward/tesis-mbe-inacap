@@ -36,7 +36,10 @@ $_SESSION['producto'] = $producto;
      </div>
      <div class="info">
        <form class="" action="micarrito.php" method="post">
-         
+       <input type="hidden" name="nombre" value="<?php echo $producto['nombre']; ?>">
+       <input type="hidden" name="descripcion" value="<?php echo $producto['descripcion']; ?>">
+       <input type="hidden" name="precio" value="<?php echo $producto['precio']; ?>">
+       
          <div class="nombre"><h3><?php echo $producto['nombre']; ?></h3></div>
          <div class="valor"> <label>PRECIO: $</label> <?php echo $producto['precio'];?> </div>
          <div class="cantpro">

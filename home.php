@@ -37,13 +37,11 @@
     <div class="tittle" id="titulo">
         <h3>Mi Cuenta</h3>
     </div>
-        <div id="botones">
+        <div id="botones-iz">
             <ul>
                 <button class="botonMenu" id="historial">Historial De Compras</button>
                 <button class="botonMenu" id="btnDirecciones">Direcciones</button>
-                <button class="botonMenu" id="menotdopago">Metodo de Pago</button>
                 <button class="botonMenu" id="editar" >Mis Datos</button>
-                <button class="botonMenu" id="creartienda">crear tienda</button>
                 <button class="botonMenu" id="eliminar-cuenta">Eliminar cuenta</button>
             </ul>
         </div>
@@ -51,6 +49,9 @@
 
 
 
+        </div>
+        <div id="botones-der">
+        <button class="botonMenu" id="creartienda">Crear tienda</button>
         </div>
   </div>
   <script type="text/javascript">

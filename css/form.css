@@ -44,3 +44,19 @@
     font-size: 20px;
     color: white;
 }
+/*agregar tienda */
+.lbl1{
+    font-family: times, times new roman;
+    font-size: 20px;
+    font-weight: bold;
+}
+#btnCrear{
+    width: 85px;
+    height: 30px;
+    border-radius:4px;
+    border: 1px solid;
+    background-color: lightblue;
+}
+#link{
+    color: red;
+}

@@ -10,29 +10,34 @@
         // Obtengo sesiones
         $userId = $_SESSION['user_id'];
         $objeto = $_SESSION['producto'];
-        
+        $nomPro = $_POST['nombre'];
+        $desPro = $_POST['descripcion'];
+        $prePro= $_POST['precio'];
         // Genero arreglo de carrito
+        
 
         if (!isset($_SESSION['carrito'])) {    
             $carrito = array(
                 'user_id' => $userId,
                 'carrito' => ''
-            )
+            );
             json_encode($carrito);
 
         }
         
-        $arr = json_decode($carrito, true);
+         echo 'nombre: ' . $nomPro . ' descripcion: ' . $desPro . 'prePro' . $prePro;
+
+       /* $arr = json_decode($carrito, true);
 
         if (isset($objeto)) {
-            $net['producto'] = $producto;
+            $net['producto'] = $objeto;
             array_push( $arr['carrito'], $net);
 
-            $_SESSION['producto'] = 'agregado';
+          //  $_SESSION['producto'] = 'agregado';
             $_SESSION['carrito'] = $carrito;
         }
 
-        echo json_encode($carrito);
+        echo json_encode($carrito);*/
 ?>
     <!-- Carrito HTML
     <div id="carrito">
