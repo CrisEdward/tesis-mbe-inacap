@@ -10,21 +10,20 @@
 
         $userId = $_SESSION['user_id'];
 
-        $objeto = $POST['producto'];
+        $objeto = $_SESSION['producto'];
         
         if (isset($objeto)) {
-            $json = {
-                "user_id": $userId,
-                "carrito:" {
-                    "producto": $objeto
-                }
-            }
+            $json = array(
+                'user_id'=> $userId,
+                 'carrito' => array( 
+                    'producto'=> $objeto
+                 )
+            );
 
-            json_encode($json);
         }
         
 
-        echo json_decode($json);
+        echo json_encode($json);
 ?>
     <!-- Carrito HTML
     <div id="carrito">

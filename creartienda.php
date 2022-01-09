@@ -4,7 +4,7 @@
 
 
 ?>
-
+    <link rel="stylesheet" href="css/form.css">
     <form method="post" id="formp">
       <table>
         <tr>

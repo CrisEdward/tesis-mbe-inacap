@@ -21,6 +21,8 @@
   $stmt->execute();
   $imgproducto = $stmt->fetch(PDO::FETCH_ASSOC);
   
+$_SESSION['producto'] = $producto;
+
 
  ?>
  <link rel="stylesheet" href="css/master.css">
