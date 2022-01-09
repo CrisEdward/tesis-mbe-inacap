@@ -5,25 +5,34 @@
     }
     else{
         // Estamos logueado    
-
         include('partials/header.php');
 
+        // Obtengo sesiones
         $userId = $_SESSION['user_id'];
-
         $objeto = $_SESSION['producto'];
         
-        if (isset($objeto)) {
-            $json = array(
-                'user_id'=> $userId,
-                 'carrito' => array( 
-                    'producto'=> $objeto
-                 )
-            );
+        // Genero arreglo de carrito
+
+        if (!isset($_SESSION['carrito'])) {    
+            $carrito = array(
+                'user_id' => $userId,
+                'carrito' => ''
+            )
+            json_encode($carrito);
 
         }
         
+        $arr = json_decode($carrito, true);
 
-        echo json_encode($json);
+        if (isset($objeto)) {
+            $net['producto'] = $producto;
+            array_push( $arr['carrito'], $net);
+
+            $_SESSION['producto'] = 'agregado';
+            $_SESSION['carrito'] = $carrito;
+        }
+
+        echo json_encode($carrito);
 ?>
     <!-- Carrito HTML
     <div id="carrito">
