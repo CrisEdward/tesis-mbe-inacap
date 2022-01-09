@@ -1,0 +1,37 @@
+.botonMenu{
+   border-radius: 2px;
+   background-color: #6B9BA5;
+   width: 150px;
+   height: 50px;
+
+}
+#msjBienvenida{
+    width: 350px;
+    float: right;
+
+}
+#contenedor{
+    width: 100%;
+    background-color: #0A4D7B;
+    height: 550px;
+    float: left;
+    border: 1px solid;
+
+}
+#titulo{
+    color: black;
+    text-align: center;
+}
+#botones{
+    width: 200px;
+    height: 250px;
+    float: left;
+    margin-left: 200px;
+}
+#cont-datos{
+    width: 700px;
+    height: 450px;
+    float: right;
+    margin-right: 200px;
+    border: 1px solid;
+}

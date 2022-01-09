@@ -1,0 +1,49 @@
+.producto{
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.img{
+  margin: 20px;
+}
+
+.info{
+  width: 70%
+}
+.nombre{
+  text-align: center;
+  margin-top: 20px
+}
+
+
+.valor{
+  margin: 10px 40px;
+  font-size: 20px;
+  text-align: right;
+}
+
+
+.margen{
+  margin-right: 40px;
+}
+
+.cantpro{
+  display: flex;
+  flex: auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 100%;
+
+}
+
+.descripcion{
+  margin: 10px 20px;
+  padding: 10px;
+}
+
+.comentar{
+  width: 100%;
+  height: 400px;
+}

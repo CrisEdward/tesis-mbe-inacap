@@ -1,0 +1,46 @@
+/*editar datos*/
+.formEdit{
+    width: 200px;
+    border-radius: 3px;
+    border: 1px solid;
+    height: 30px;
+}
+#btnEditar{
+    width: 100px;
+    height: 30px;
+    background-color: #148E5C;
+    float:right;
+    border-radius: 3px;
+    border: 1px solid;
+}
+#btnEditar:hover{
+    background-color: #0F6C46;
+}
+.lblEdit{
+    font-family: times, times new roman;
+    font-size: 20px;
+    color: white;
+}
+/*agregar direcciones*/
+.cmbDir{
+    width: 250px;
+}
+#txtDireccion{
+    width: 250px;
+}
+#btnAgregar{
+    width: 100px;
+    height:30px;
+    background-color: #148E5C;
+    float:right;
+    border-radius: 3px;
+    border: 1px solid;
+}
+#btnAgregar:hover{
+    background-color: #0F6C46;
+}
+.lblDir{
+    font-family: times, times new roman;
+    font-size: 20px;
+    color: white;
+}
